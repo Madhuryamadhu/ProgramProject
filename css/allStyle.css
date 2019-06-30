@@ -1,0 +1,369 @@
+
+/*----------------------------------------------------------- General CSS -----------------------------------------------------------------------------*/
+
+body {
+	background-color:#E6EBE0 !important;
+	background-position:center;
+	background-repeat:repeat-y;
+	font-family: "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	font-size:10px;
+	color:#777;
+}
+
+/* Create Button on table */
+button.createBtnTable {
+    width: 140px;
+    float: right;
+    margin-bottom: 2px;
+	margin-top: 10px;
+	color:white !important;
+	border-color: black;
+	background-color: black;
+}
+
+button.createBtnTable:hover {
+  background-color: white;
+  color: black !important;
+}
+
+/* Header and Footer CSS */
+.headerFooterDiv {
+	background-color:black;
+	border-top:2px solid #ccc;
+}
+.headerFooterDiv h1 {
+	text-align:left;
+	font-family:Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size:30px;
+	color:#333;
+	margin:0;
+	font-weight:normal;
+}
+.headerFooterDiv h1 strong {
+	color:#A85BA6;
+}
+.headerFooterDiv h1 a {
+	color: #fff;
+	text-decoration:none;
+}
+.headerFooterDiv h2 {
+	font-size:11px;
+	font-weight:normal;
+	text-align:left;
+	color:#fff;
+	padding-left: 31px;
+}
+.headerFooterDiv ul {
+	margin:20px 0 0 0;
+	padding:0;
+}
+
+.footerDiv{
+	color:white;
+}
+
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+	 margin-top: 0px !important;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border: 2px solid white;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 12px 10px 12px;
+}
+
+.social-icon li a:hover {
+    border-color: #bfba55;
+    color: #bfba55;
+    transform: scale(1.1);
+}
+
+/* Logo Image CSS */
+.logoImage{
+	 border-radius: 50%;
+}
+
+
+/*----------------------------------------------------------------- USER Pages Specific CSS ------------------------------------------------------------*/
+/* User Page Contenet Div  */
+.progContentDiv {
+	margin:10px 10px 15px 0px;
+	border-radius: 5px;
+	background-color:#FFFFFF; 
+	box-shadow: 10px 10px 5px grey;
+}
+
+.progContentDiv h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #A85BA6;
+}
+
+.progFilterDiv{
+	background-color:#FFFFFF; 
+	border-radius: 5px; 
+	box-shadow: 10px 10px 5px grey; 
+	margin-top: 10px;
+}
+/* User Page Filter Submit Button  */
+.filterSubmitBtn{
+    margin: 24px 0px;
+	 width: 100%;
+}
+
+/* User Page Sidebar Div  */
+.sidebarDiv{
+	background-color:#FFFFFF; 
+	border-radius: 5px; 
+	box-shadow: 10px 10px 5px grey; 
+	height: auto; 
+	margin-top: 10px;
+    margin-bottom: 15px;
+}
+.sidebarDiv h1{
+    color: #A85BA6;
+    font-size: 22px;
+}
+
+
+/* User Page Table */
+.userTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.userTable td, .userTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.userTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.userTable tr:hover {background-color: #ddd;}
+
+.userTable th {
+  text-align: left;
+  background-color: white;
+  color: white;
+  padding: 13px 15px 13px 15px !important;
+}
+
+/* <<<<<<<<<<<<<<Second Page>>>>>>>>>>>>>>>>>*/
+.programShowDiv {
+  width: 100%;
+      margin-top: 15px;
+  padding: 20px;
+  border: 2px solid black;
+      margin-bottom: 20px;
+}
+.programName {
+    color: #A85BA6;
+    font-size: 22px;
+	margin-bottom: 0px;
+}
+.programParagraph{
+font-size: 16px;
+}
+.solnButtons
+{
+	border: 1px solid !important;
+	margin-bottom: 18px !important;
+}
+ul.breadcrumb {
+  padding: 5px 0px;
+  list-style: none;
+ 
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.breadcrumbdiv{
+	 
+	background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px grey;
+    margin-top: 10px;
+}
+.breadcrumb {
+    
+    background-color: transparent !important; 
+	    margin-top: 5px  !important;
+    margin-bottom: 5px  !important;
+    
+}
+.programOpDiv{
+	width: 100%;
+      margin-top: 10px;
+  background-color: black;
+  border: 2px solid black;
+     /* margin-bottom: 15px;*/
+	  color:white;
+}
+.programOpParagraph{
+	    margin-top: 10px;
+}
+.label-default {
+    background-color: #325438 !important;
+	    padding: 5px!important;
+}
+.div3{
+	width: 100%;
+      margin-top: 10px;
+    margin-bottom: 15px;
+	padding: 0px !important;
+    font-weight: 900 !important;
+}
+button.copy {
+    float: right;
+}
+
+.solution{
+	padding: 0px !important;
+}
+
+
+/*---------------------------------------------------------------------- Admin Pages Specific CSS -----------------------------------------------------------------*/
+/* Admin Action Div */
+.adminActionsDiv{
+	background-color:#FFFFFF; 
+	border-radius: 5px; 
+	box-shadow: 10px 10px 5px grey; 
+	margin-top: 10px;
+
+}
+
+button#submit {
+ margin: 24px 0px;
+	 width: 100%;
+    
+}
+
+h4#adminActions{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #A85BA6;
+	padding: 0px !important;
+}
+#content {
+	margin:10px 10px 15px 0px;
+	    border-radius: 5px;
+}
+
+#content h1{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #A85BA6;
+	padding: 0px !important;
+}
+/* Admin Actions Buttons */
+.adminActionsBtn
+{
+	border: 1px solid !important;
+    margin-bottom: 18px !important;
+    margin-top: 10px !important;
+    margin-left: 46px !important;
+    margin-right: 15px !important;
+	width: 18% !important;
+	background-color: black;
+	color: white;
+	border-color: white;
+}
+
+/* Admin Page Filter Div */
+.adminPageFilterDiv
+{
+	border: 1px solid !important;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 100px;
+    padding: 9px;
+	border-radius: 5px;
+	    
+}
+
+/* Admin Page Table */
+.adminsTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.adminsTable td, .adminsTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.adminsTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.adminsTable tr:hover {background-color: #ddd;}
+
+.adminsTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.adminsTable td{
+	 text-align: center;
+}
+
+
+
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+input#hide {
+    width: 35px;
+    height: 29px;
+}
+
+button#submitCreate {
+        width: 15%;
+	margin-top: 0px;
+    
+}
