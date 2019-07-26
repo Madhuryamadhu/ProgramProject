@@ -26,6 +26,20 @@ $(document).ready(function(){
         $("#myform").hide(600);
 	element.classList.remove("blur");
     });
+	
+	var likeclicks = 0;
+	var dislikeclicks=0;
+	$(".like-counter").click(function(){
+  likeclicks += 1;
+  document.getElementById("likeclicks").innerHTML = likeclicks;
+  $('.like-counter').addClass("liked");
+});
+	$(".dislike-counter").click(function(){
+  dislikeclicks += 1;
+  document.getElementById("dislikeclicks").innerHTML = dislikeclicks;
+  $('.dislike-counter').addClass("disliked");
+});
+
 });
   </script>
 </head>
@@ -36,12 +50,12 @@ $(document).ready(function(){
 			<div class="col-lg-4 col-md-5 col-sm-5">
 				<img src="images\backgrounds\programslogo.jpg" class="logoImage" alt="Paris" width="70" height="70">
 			</div>
-			<div class="col-lg-6 col-md-7 col-sm-7">
+			<div class="col-lg-6 col-md-7 col-sm-7 animate">
 				<h1><a href="#">all<strong>PROGRAMS</strong></a></h1>
 				<h2>For all your program needs.</h2>
 			</div>
 			<div class="col-lg-2 col-md-7 col-sm-7">
-			<button type="button" class="ReportIssue" id="ReportIssue">Report Issue</button>
+			<button type="button" class="ReportIssue suggest" id="ReportIssue">Report Issue</button>
 			</div>
 	  </div>
  </div>
@@ -59,8 +73,12 @@ $(document).ready(function(){
 			
 			<h2 class="programName"><u>Java Program to Convert char to String and String to Char</u></h2>
 			
-			<button type="button" class="copy">Copy</button>
-			  
+			
+			<button type="button" class="dislike-counter"><i class="fa fa-thumbs-o-down"></i><span id="dislikeclicks"></span></button>
+			   <button type="button" class="like-counter"><i class="fa fa-thumbs-o-up"></i><span id="likeclicks"></span></button>
+				<button type="button" class="copy">Copy</button>
+				
+				
 				<div class="programShowDiv col-lg-12 col-md-12 col-sm-12" style="overflow-y: scroll; height:200px;">
 					<pre class="prettyprint">
 public class StringToCharExample2 {
@@ -95,6 +113,7 @@ public class StringToCharExample2 {
 				<div class="div3 col-lg-12 col-md-12 col-sm-12">
 				
 				<b>Article Tags:</b> <span class="label label-default">Java</span> <span class="label label-default">Tachnical Scripter</span> <span class="label label-default">Java-Puzzle</span>
+				
 				</div>
 		</div>
 		
